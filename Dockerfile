@@ -15,6 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Expose ports
 EXPOSE 8888
 
-# default command to execute
+# default command to execute#
 CMD exec gunicorn docker_test.wsgi:application --bind 0.0.0.0:8888
 
